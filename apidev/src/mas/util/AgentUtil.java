@@ -17,7 +17,6 @@ public class AgentUtil {
 		DFAgentDescription dfd = new DFAgentDescription();
 		ServiceDescription sd = new ServiceDescription();
 		dfd.addServices(sd);
-
 		try {
 
 			  DFAgentDescription[] result = DFService.search(CurrentAgent,dfd);
