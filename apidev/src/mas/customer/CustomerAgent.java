@@ -24,7 +24,7 @@ public class CustomerAgent extends AbstractCustomerAgent {
 						ID.CustomerZone.JobList,
 						ID.CustomerZone.Negotiation};
 		
-		AgentUtil.makeZoneBB(this,zones);
+//		AgentUtil.makeZoneBB(this,zones);
 		
 		AID target = new AID("", AID.ISLOCALNAME);
 		String[] params = {ID.GSAParameters.ConfirmedOrder,
@@ -34,6 +34,6 @@ public class CustomerAgent extends AbstractCustomerAgent {
 		SubscriptionForm subform = new SubscriptionForm();
 		subform.AddSubscriptionReq(target, params);
 		
-		AgentUtil.subscribeToParam(this, bba, subform);
+//		AgentUtil.subscribeToParam(this, bba, subform);
 	}
 }
